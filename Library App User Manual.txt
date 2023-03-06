@@ -1,0 +1,21 @@
+Library Application User Manual:
+
+Purpose: This web application allows a user to add a book, and then displays the list of books on a different page. From there the user can search a book from the list, and then check out, check in, or delete a book from the list.
+
+How to Add a Book:
+1. First navigate to 'Add Book' on the top of the web page.
+2. Then enter a books name, the books author, and its genre. If its available then click the check box asking if its available.
+3. Click the Add Book button and it will reload the page. Click Book List on the top to see if your book has been added.
+*Add Book Problems:
+- Does not check for null or empty boxes, no character limit.
+
+How to Check in, Check out, or Delete a Book:
+1. Navigate to Book List on the top.
+2. Observe the list of books, and from there type a book's name exactly as shown.
+3. Click Search, it will display if the book has been found in the library, or if it is not. If you misspelt it, it will also say it could not be found.
+4. Select what you would want to do with the book, Check In, Check Out, or Delete.
+5. After Selecting your option, press Submit in order to confirm your change. After the page reloads, if you deleted a book, it will dissapear from the list of books. If you checked in or out a book, you will need to search it again to see the change.
+
+*Book List Problems:
+- starts with null, if click submit without searching a book first. Error
+- to save search used single item database, if multiple people are using the site it would cause problems. (only way I could think of to get the search from a GET function to a POST function.
